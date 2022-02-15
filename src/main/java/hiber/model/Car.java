@@ -70,11 +70,11 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return Objects.equals(model, car.model) && Objects.equals(series, car.series) && Objects.equals(user, car.user);
+        return Objects.equals(model, car.model) && Objects.equals(series, car.series);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(model, series, user);
+        return Objects.hash(model, series);
     }
 }
